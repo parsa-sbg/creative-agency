@@ -1,0 +1,275 @@
+@media (min-width: 1400px) {
+    .container{
+        max-width: 1250px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+
+}
+
+
+
+
+@media screen and (max-width: 1200px) {
+    .home::after{
+        width: 20rem;
+    }
+    .aboutus__link{
+        margin-top: 2rem;
+    }
+    .aboutus::after{
+        width: 20rem;
+    }
+    .service{
+        width: 20rem;
+        height: 20rem;
+    }
+    .services__link,
+    .whyus__btn{
+        margin-top: 1rem;
+    }
+    .swiper-slide {
+        max-width: 48rem !important;
+    }
+    .whyus__right{
+        margin-left: 2rem;
+    }
+    .feedbacks__photo-left--open{
+        right: 75%;
+    }
+    
+    .feedbacks__photo-right--open{
+        left: 75%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .menu{
+        gap: 2rem;
+    }
+    .header__search-icon{
+        margin-left: 2rem;
+    }
+    .home__title{
+        font-size: 4rem;
+    }
+    .header__text{
+        font-size: 1.4rem;
+    }
+    .home__image{
+        margin-right: -15rem;
+    }
+    .aboutus__title,
+    .services__title,
+    .portfolio__title,
+    .whyus__title{
+        font-size: 3rem;
+    }
+    .aboutus__content{
+        padding-top: 0rem;
+    }
+    /* .sec-name{
+        margin-bottom: 0.5rem;
+    } */
+    .aboutus__banner{
+        width: 80%;
+    }
+    .service{
+        width: 16rem;
+        height: 16rem;
+    }
+    .service__title{
+        font-size: 1.5rem;
+    }
+    .services__desc{
+        font-size: 1.2rem;
+    }
+    .swiper-slide {
+        max-width: 40rem !important;
+    }
+    .whyus__right{
+        margin-left: 0rem;
+    }
+    .feedbacks__photo-left--open{
+        right: 80%;
+    }
+    
+    .feedbacks__photo-right--open{
+        left: 80%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu{
+        display: none;
+    }
+    .header__mobile-toggle-btn{
+        display: flex;
+    }
+    .home__wrapper{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .home__image{
+        margin: auto;
+        order: -1;
+        max-width: 100%;
+    }
+    .home__content,
+    .aboutus__content{
+        max-width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+    .home::after,
+    .aboutus::after{
+        display: none;
+    }
+    .aboutus__banner{
+        width: 17rem;
+    }
+    .service{
+        width: 23rem;
+        height: 23rem;
+    }
+    .service__title{
+        font-size: 1.8rem;
+    }
+    .services__desc{
+        font-size: 1.6rem;
+    }
+    .services__box{
+        gap: 4rem;
+        margin-top: 3rem;
+    }
+    .swiper-slide {
+        max-width: 35rem !important;
+    }
+    .whyus__mobile-btn{
+        display: flex;
+    }
+    .whyus__btn{
+        display: none;
+    }
+    .whyus__title{
+        margin-bottom: 3rem;
+    }
+    .connection-form{
+        margin-top: 8rem;
+    }
+    .menu{
+        position: fixed;
+        left: -22rem;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        background-color: #101010;
+        padding: 6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        list-style: disc;
+        width: 22rem;
+        transition: all 200ms ease;
+        align-items: start;
+    }
+    .mobile-menu--show {
+        left: 0;
+    }
+    .mobile-menu--show .menu__item {
+        font-size: 2rem;
+        cursor: pointer;
+        transition: all 200ms ease;
+
+    }
+    .feedbacks__photo-left--open{
+        right: 90%;
+    }
+    
+    .feedbacks__photo-right--open{
+        left: 90%;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .services__box{
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+    .service{
+        width: 21rem;
+        height: 21rem;
+    }
+    .service__title{
+        font-size: 1.5rem;
+    }
+    .services__desc{
+        font-size: 1.2rem;
+    }
+    .swiper-slide {
+        max-width: 29rem !important;
+    }
+    .feedbacks__photo{
+        display: none;
+    }
+    .feedback__mobile-image{
+        display: block;
+    }
+    .feedbacks{
+        padding-bottom: 0;
+    }
+    .feedbacks__title{
+        margin-bottom: 7rem;
+    }
+}
+@media screen and (max-width: 470px) {
+    .service{
+        width: 17rem;
+        height: 17rem;
+    }
+    .services__desc{
+        font-size: 1rem;
+    }
+
+}
+@media screen and (max-width: 400px) {
+    .home__title{
+        font-size: 3.5rem;
+    }
+    .services__box{
+        gap: 1.5rem;
+    }
+    .service{
+        width: 23rem;
+        height: 23rem;
+    }
+    .service__title{
+        font-size: 1.8rem;
+    }
+    .services__desc{
+        font-size: 1.4rem;
+    }
+    .swiper-slide {
+        max-width: 23rem !important;
+    }
+    .footer__copyright{
+        margin-top: 5rem;
+    }
+}
+
+
+/* min height */
+
+@media screen and (max-height: 400px){
+    .feedbacks__photo{
+        display: none;
+    }
+    .feedback__mobile-image{
+        display: block;
+    }
+    .feedbacks{
+        padding-bottom: 0;
+    }
+}

@@ -1,0 +1,40 @@
+@import "./reset.css";
+@import "./variables.css";
+@import "./fonts.css";
+@import "./defaultStyles.css";
+:root{
+    font-size: 10px;
+}
+
+html{
+    box-sizing: border-box;
+    font-size : 62.5%;
+    font-size: 1.6rem;
+    user-select: none;
+}
+
+body{
+    font-size: inherit;
+    font-family: "Poppins";
+    color: var(--white-color) !important;
+    overflow-x: hidden !important;
+    background-color: var(--dark-color) !important;
+    position: relative;
+}
+a {
+    text-decoration: none !important;
+}
+
+section,
+header,
+footer{
+    margin: 0 0 8rem 0;
+}
+
+*,
+*::before,
+*::after {
+    outline: none;
+    box-sizing: inherit;
+    /* transition: all 200ms ease !important; */
+}
