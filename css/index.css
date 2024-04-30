@@ -90,6 +90,7 @@
     align-items: center;
     gap: 4rem;
     margin: 0;
+    z-index: 1000;
 }
 
 .menu__item {
@@ -180,6 +181,7 @@
 
 .main {
     padding-top: 10.246rem;
+    z-index: 10;
 }
 
 /* start home styles */
@@ -946,3 +948,24 @@
 }
 
 /* end footer styles */
+
+/* start cover */
+
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: transparent;
+    backdrop-filter: blur(2px);
+    transition: all 200ms ease;
+    z-index: 9;
+    display: none;
+}
+
+.cover--show{
+    display: block;
+}
+
+/* end cover */

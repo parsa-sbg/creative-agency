@@ -10,6 +10,7 @@ const PhotoObserver = new IntersectionObserver(photoObserverHandler, { threshold
 const feedbackPhotoLeft = document.querySelector('.feedbacks__photo-left')
 const feedbackPhotoRight = document.querySelector('.feedbacks__photo-right')
 const homeTitleElem = document.querySelector('.home__title')
+const cover = document.querySelector('.cover')
 
 
 // funcsions
@@ -84,6 +85,12 @@ const titleWriter = () => {
     },100)
 }
 
+const toggleMenu = () => {
+    toggleClass('mobile-menu--show', menu)
+    toggleClass('header__mobile-toggle-btn--open', toggleBtn)
+    toggleClass('cover--show',cover)
+}
+
 
 // handle swiper //
 
@@ -116,14 +123,14 @@ const swiper = new Swiper('.portfolio__swiper', {
 // event listeners //
 
 toggleBtn.addEventListener('click', () => {
-    menu.classList.toggle('mobile-menu--show')
-    toggleBtn.classList.toggle('header__mobile-toggle-btn--open')
+    toggleMenu()
 })
 
 menuItems.forEach(menuItem => {
     menuItem.addEventListener('click', () => {
         removeClass('menu__item--active')
         toggleClass('menu__item--active', menuItem)
+        toggleMenu()
 
         let sectionClass = menuItem.dataset.section
 
@@ -143,4 +150,8 @@ feedbacksPhotos.forEach(photo => {
 
 window.addEventListener('load', () => {
     titleWriter()
+})
+
+cover.addEventListener('click', () => {
+    toggleMenu()
 })
