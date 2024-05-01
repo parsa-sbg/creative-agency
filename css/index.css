@@ -957,8 +957,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: transparent;
-    backdrop-filter: blur(2px);
+    background-color: rgba(0, 0, 0, 0.8);
     transition: all 200ms ease;
     z-index: 9;
     display: none;

@@ -95,7 +95,6 @@ const toggleMenu = () => {
 // handle swiper //
 
 const swiper = new Swiper('.portfolio__swiper', {
-    // If we need pagination
     loop: true,
 
     pagination: {
